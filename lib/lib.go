@@ -8,7 +8,7 @@ func (b *baseClient) Foo() error {
 
 type commandable struct{}
 
-func (c *Client) Del(key string) error {
+func (c *commandable) Del(key string) error {
 	return nil
 }
 
